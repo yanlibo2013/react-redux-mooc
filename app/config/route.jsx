@@ -1,12 +1,13 @@
 import React, {Component } from 'react';
 import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
 import Index from '../component/Index';
+import About from '../component/About';
 
 
 class Main extends Component {
     render() {
         return (
-            <div>{this.props.children}</div>
+            <div className="main">{this.props.children}</div>
         );
     }
 };
@@ -15,6 +16,7 @@ const route = (
         <Route path="/" component={Main}>
             <IndexRoute component={Index} />
         </Route>
+        <Route path="/about" component={About}></Route>
     </Router>
 );
 
