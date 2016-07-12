@@ -4,7 +4,7 @@ import React, {Component} from 'react';
  */
 import { connect } from 'react-redux';
 
-class About extends Component {
+class Home extends Component {
     render() {
         return (
             <div className="about">
@@ -15,4 +15,4 @@ class About extends Component {
 };
 
 
-export default About;
+export default Home;
