@@ -40,7 +40,7 @@ class Index extends Component {
     //在初始化渲染执行之后立刻调用一次
     componentDidUpdate() {
         less.modifyVars({
-            '@bgcolor':'red'
+            '@bgcolor': 'red'
         });
 
     }
